@@ -1,13 +1,13 @@
 import "./App.css";
+import React from "react";
+import Navbar from "../components/Navbar/Navbar";
+import About from "../components/DefaultPage/DefaultPage";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>React App</h1>
-      </header>
+      <Navbar />
+      <About />
     </div>
   );
 }
-
-export default App;
