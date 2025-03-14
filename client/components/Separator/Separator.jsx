@@ -26,7 +26,7 @@ const Separator = () => {
     },
   ];
 
-  const duplicatedItems = [...items, ...items, ...items];
+  const duplicatedItems = [, ...items, ...items, ...items, ...items];
 
   return (
     <div className="separator-box">
