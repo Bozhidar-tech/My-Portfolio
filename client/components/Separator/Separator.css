@@ -1,0 +1,58 @@
+.separator-box {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.sliding-items {
+  display: flex;
+  gap: 40px;
+  padding: 15px;
+  position: absolute;
+  white-space: nowrap;
+  animation: slide 15s linear infinite;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item .icon {
+  font-size: 30px;
+}
+
+.item span {
+  font-size: 20px;
+}
+
+.item.react .icon,
+.item.react span {
+  color: #61dafb;
+}
+
+.item.html .icon,
+.item.html span {
+  color: #e34c26;
+}
+
+.item.css .icon,
+.item.css span {
+  color: #2965f1;
+}
+
+.item.js .icon,
+.item.js span {
+  color: #f7df1e;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
